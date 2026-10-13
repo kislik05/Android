@@ -33,14 +33,14 @@ private val DarkColors = darkColorScheme(
 )
 
 @Composable
-fun RecallItTheme(
+fun RecallAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
     val colorScheme = if (darkTheme) DarkColors else LightColors
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = RecallItTypography,
+        typography = RecallAppTypography,
         content = content
     )
 }
